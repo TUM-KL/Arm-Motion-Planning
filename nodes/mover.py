@@ -63,6 +63,7 @@ class Mover:
         
         # We create a `DisplayTrajectory` publisher which is used later to publish
         # trajectories for RViz to visualize: 
+        # This is to show how git works
         self.display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path',
                                                             moveit_msgs.msg.DisplayTrajectory,
                                                             queue_size=20)
